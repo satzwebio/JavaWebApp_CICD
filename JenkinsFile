@@ -10,6 +10,7 @@ pipeline {
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
+        sh 'echo "HELLO"'
         // build the project and create a JAR file
         sh 'cd JavaWebApp_CICD && mvn clean package'
       }
