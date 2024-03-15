@@ -12,7 +12,7 @@ pipeline {
         sh 'ls -ltr'
         sh 'echo "HELLO"'
         // build the project and create a JAR file
-        sh ' mvn clean package'
+        sh 'mvn clean package'
       }
     }
     stage('Static Code Analysis') {
